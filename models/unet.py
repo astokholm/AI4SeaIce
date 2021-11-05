@@ -27,7 +27,14 @@ PARAMETERS = {
     'dilation_rate': (1, 1),
     'padding': (1, 1),  # Number of padding pixels.
     'padding_style': 'zeros',  # Style of applied padding. e.g. zero_pad, replicate.
-    'filters': [16, 32, 32, 32]
+    'filters': [16, 32, 32, 32]  # Standard 4-level U-Net
+
+    # Used 'filters' parameters:
+#   'filters': [16, 32, 32]  # 3-level	
+#   'filters': [16, 32, 32, 32, 32]  # 5-level
+#   'filters': [16, 32, 32, 32, 32, 32]	 # 6-level
+#   'filters': [16, 32, 32, 32, 32, 32, 32]  # 7-level
+#   'filters': [16, 32, 32, 32, 32, 32, 32, 32]	 # 8-level
 }
 
 
