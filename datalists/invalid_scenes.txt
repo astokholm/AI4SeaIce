@@ -1,0 +1,9 @@
+20180617T203742_S1B_AMSR2_Icechart-Greenland-NorthWest.nc
+20180617T203542_S1B_AMSR2_Icechart-Greenland-NorthWest.nc
+20180704T110035_S1B_AMSR2_Icechart-Greenland-NorthWest.nc
+20180617T203438_S1B_AMSR2_Icechart-Greenland-NorthWest.nc
+20180617T203842_S1B_AMSR2_Icechart-Greenland-NorthWest.nc
+20180617T203942_S1B_AMSR2_Icechart-Greenland-NorthWest.nc
+20180617T203642_S1B_AMSR2_Icechart-Greenland-NorthWest.nc
+20180617T204042_S1B_AMSR2_Icechart-Greenland-NorthWest.nc
+20180617T204142_S1B_AMSR2_Icechart-Greenland-NorthWest.nc
