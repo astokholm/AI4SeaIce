@@ -8,16 +8,12 @@ __author__ = 'Andreas R. Stokholm'
 __contributor__ = 'Andrzej S. Kucik'
 __copyright__ = ['Technical University of Denmark', 'European Space Agency']
 __contact__ = ['stokholm@space.dtu.dk', 'andrzej.kucik@esa.int']
-__version__ = '0.0.1'
-__date__ = '2021-27-10'
+__version__ = '0.1.2'
+__date__ = '2021-14-11'
 
 # -- Third-party modules -- #
 import torch
-from torch import nn as nn
-
-# -- Proprietary modules -- #
-from models.models_parts import DoubleConv, ContractingBlock, ExpandingBlock, FeatureMap
-
+from torch import nn
 
 PARAMETERS = {
     # -- Model parameters -- #
@@ -30,11 +26,11 @@ PARAMETERS = {
     'filters': [16, 32, 32, 32]  # Standard 4-level U-Net
 
     # Used 'filters' parameters:
-#   'filters': [16, 32, 32]  # 3-level	
-#   'filters': [16, 32, 32, 32, 32]  # 5-level
-#   'filters': [16, 32, 32, 32, 32, 32]	 # 6-level
-#   'filters': [16, 32, 32, 32, 32, 32, 32]  # 7-level
-#   'filters': [16, 32, 32, 32, 32, 32, 32, 32]	 # 8-level
+    #   'filters': [16, 32, 32]  # 3-level
+    #   'filters': [16, 32, 32, 32, 32]  # 5-level
+    #   'filters': [16, 32, 32, 32, 32, 32]	 # 6-level
+    #   'filters': [16, 32, 32, 32, 32, 32, 32]  # 7-level
+    #   'filters': [16, 32, 32, 32, 32, 32, 32, 32]	 # 8-level
 }
 
 
@@ -184,7 +180,6 @@ class UNet(nn.Module):
 
         self.feature_map = FeatureMap(input_n=parameters['filters'][0], output_n=parameters['n_classes'])
 
-
     def forward(self, x):
         """Forward model pass."""
         x_contract = [self.input_block(x)]
@@ -199,5 +194,5 @@ class UNet(nn.Module):
         return self.feature_map(x_expand)
 
 
-net = UNet(parameters=PARAMETERS)
-
+if __name__ == '__main__':
+    net = UNet(parameters=PARAMETERS)
