@@ -79,7 +79,7 @@ under MIT licence. See [`LICENSE`](./LICENSE) for more information.
 
 ## Contact
 
-E-mail: [astokholm@space.dtu.dk](mailto:astokholm@space.dtu.dk),  [andrzej.kucik@esa.int](mailto:andrzej.kucik@esa.int)
+E-mail: [stokholm@space.dtu.dk](mailto:astokholm@space.dtu.dk),  [andrzej.kucik@esa.int](mailto:andrzej.kucik@esa.int)
 
 Project Link: <https://github.com/astokholm/AI4SeaIce>
 
