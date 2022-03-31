@@ -58,7 +58,7 @@ git clone git@github.com:astokholm/AI4SeaIce.git
 ## Usage
 At its current development stage, the scripts in the repository are not meant to be run as executable code, but to 
 provided the details about the architecture and parameters of the models used in sea ice charting experiments (see 
-[`models`](./models)). 
+[`models`](./models)). In addition, loss functions have recently been added for an loss comparison paper accepted at the ICLR (see [`functions`](./functions)). 
 
 The training and validation split used in the experiments is available in [`datalists`](./datalists).
 
