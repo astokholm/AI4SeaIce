@@ -26,6 +26,7 @@
 
 This project contains the code for a U-Net model architecture used for sea ice charting segmentation. It also 
 contains the names of files used for training and validation (testing).
+New: Loss functions added for ICLR conference paper. (31/04/2022)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
